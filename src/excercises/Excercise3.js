@@ -16,11 +16,15 @@ Tip: Example `ip-api.com` api call for 1.1.1.1 address is a GET to `http://ip-ap
 */
 const Excercise3 = () => {
   const IPAddressArray = ["1.1.1.1", "2.2.2.2", "3.3.3.3", "4.4.4.4"];
-  const getData = IPAddressArray.map((item) => {
-    return axios.get(`http://ip-api.com/json/${item}`);
-  });
-  console.log(getData);
+  const APIArray = IPAddressArray.map(
+    (item) => `http://ip-api.com/json/${item}`
+  );
+  const getData = async () => {
+    const response = await APIArray.map((item) => axios.get(item));
 
+    console.log(response);
+  };
+  getData();
   return <div>Excercise3</div>;
 };
 
