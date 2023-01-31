@@ -2,13 +2,15 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Excercises from "./excercises/Excercises";
+import Excercise3 from "./excercises/Excercise3";
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <Excercises />.
+        <Excercises />
+        <Excercise3 />
         <a
           className='App-link'
           href='https://reactjs.org'
