@@ -1,6 +1,73 @@
+@import "./variables";
+@import "./mixins";
 .container {
-  display: flex;
-  padding: 0, 15px;
-  background-color: red;
-  border-radius: 4px 4px 0 0;
+  width: 38%;
+  height: 48vh;
+  display: grid;
+  padding: 0 0 0 $size2;
+  background-color: $blue1;
+  border-radius: 1rem;
+  grid-template-areas:
+    "a b b b c"
+    "d d e e f"
+    "g g h h i"
+    "j j j j k";
+
+  align-items: center;
+  justify-items: start;
+  .name {
+    grid-area: b;
+    font-size: 1.5rem;
+    color: $white;
+    font-weight: 700;
+  }
+  .imageContainer {
+    grid-area: a;
+    background-color: gray;
+    width: $size1;
+    height: $size1;
+    border-radius: 50%;
+    margin-top: 5vh;
+  }
+  .plusBtn {
+    grid-area: c;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 0;
+    background-color: $navyBlue;
+    color: $white;
+    font-size: $fontSize1;
+  }
+  .positionName {
+    grid-area: d;
+    @include text;
+    color: $white;
+  }
+  .position {
+    grid-area: g;
+    color: $blue3;
+    transform: translateY(-$size3);
+    @include text;
+  }
+  .companyName {
+    grid-area: e;
+    @include text;
+    color: $white;
+  }
+  .company {
+    grid-area: h;
+    @include text;
+    color: $blue3;
+    transform: translateY(-$size3);
+  }
+  .number {
+    grid-area: j;
+    font-size: 0.7rem;
+    color: $white;
+    font-weight: $weight400;
+  }
+  .moreBtn {
+    grid-area: k;
+  }
 }
