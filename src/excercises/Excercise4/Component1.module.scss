@@ -23,7 +23,8 @@
   }
   .imageContainer {
     grid-area: a;
-    background-color: gray;
+    background-image: url("MonicaDoeImg.jpg");
+    background-size: cover;
     width: $size1;
     height: $size1;
     border-radius: 50%;
@@ -38,6 +39,7 @@
     background-color: $navyBlue;
     color: $white;
     font-size: $fontSize1;
+    font-weight: 600;
   }
   .positionName {
     grid-area: d;
@@ -47,7 +49,7 @@
   .position {
     grid-area: g;
     color: $blue3;
-    transform: translateY(-$size3);
+    transform: translateY(-$size2);
     @include text;
   }
   .companyName {
@@ -59,7 +61,7 @@
     grid-area: h;
     @include text;
     color: $blue3;
-    transform: translateY(-$size3);
+    transform: translateY(-$size2);
   }
   .number {
     grid-area: j;
@@ -69,5 +71,10 @@
   }
   .moreBtn {
     grid-area: k;
+    font-size: $fontSize1;
+    font-weight: 600;
+    color: $white;
+    background-color: transparent;
+    border: 0;
   }
 }
