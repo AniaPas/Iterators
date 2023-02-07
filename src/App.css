@@ -10,3 +10,8 @@
   align-items: center;
   justify-content: center;
 }
+.separator {
+  background-color: red;
+  width: 99%;
+  height: 3%;
+}
