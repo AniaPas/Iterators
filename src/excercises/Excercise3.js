@@ -37,7 +37,7 @@ const Excercise3 = () => {
     console.log("Solution to excercise 3", requiredData);
   };
   getData();
-  return <div>Excercise3</div>;
+  return <div>Excercise3: Excercise3.js file </div>;
 };
 
 export default Excercise3;

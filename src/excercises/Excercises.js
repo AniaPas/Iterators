@@ -243,7 +243,7 @@ chaining functions (a.filter().map())
   });
   console.log("Solution Excercise 2.8: ", combined);
 
-  return <div>Excercises 1 and 2</div>;
+  return <div>Excercises 1 and 2 in Excercises.js file</div>;
 };
 
 export default Excercises;

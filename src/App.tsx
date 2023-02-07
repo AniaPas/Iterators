@@ -11,9 +11,9 @@ function App() {
       <header className='App-header'>
         <Excercises />
         <Excercise3 />
-        <div className='separator'></div>
+        <div className='separator'>Ex4. Component1:</div>
         <Component1 />
-        <div className='separator'></div>
+        <div className='separator'>Ex4. Component2:</div>
         <Component2 />
       </header>
     </div>
