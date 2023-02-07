@@ -24,6 +24,11 @@
       height: 13px;
       border-radius: 50%;
       margin-left: 7px;
+      transition: all 0.45s;
+      &:hover {
+        margin-left: 25px;
+        cursor: grab;
+      }
     }
   }
 
